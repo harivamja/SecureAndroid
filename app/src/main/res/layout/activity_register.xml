@@ -19,14 +19,16 @@
         android:layout_marginTop="50dp"
         app:srcCompat = "@drawable/logo"
         />
+
     <EditText
         android:id="@+id/edittext_username"
         android:layout_width="190dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
 
-        android:hint="@string/username"
-        android:background="#ffffff"/>
+        android:background="#ffffff"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
 
 
     <EditText
@@ -35,24 +37,27 @@
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
 
+        android:background="#ffffff"
         android:hint="@string/password"
-        android:background="#ffffff"/>
+        android:inputType="textPassword" />
+
     <EditText
         android:id="@+id/edittext_cnf_password"
         android:layout_width="190dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
 
+        android:background="#ffffff"
         android:hint="@string/confirm_password"
-        android:background="#ffffff"/>
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/button"
-        android:background="#04ea00"
         android:layout_width="190dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
-        android:text="@string/button"/>
+        android:background="#04ea00"
+        android:text="@string/register" />
 
     <LinearLayout
         android:layout_width="wrap_content"

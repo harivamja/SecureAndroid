@@ -29,26 +29,13 @@ public class MainActivity extends AppCompatActivity {
         mTextPassword = (EditText)findViewById(R.id.edittext_password);
         mButtonLogin = (Button)findViewById(R.id.button);
         mTextViewRegister = (TextView)findViewById(R.id.textview_register);
-        firebaseDatabase  = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference("SecurityApp1");
 
-        mTextViewRegister.setOnClickListener( new View.OnClickListener(){
-                                                  public void onClick(View view)
-                                                  {
-
+        mTextViewRegister.setOnClickListener(new View.OnClickListener(){
+                                                  public void onClick(View view) {
                                                       Intent registerIntent = new Intent(MainActivity.this,RegisterActivity.class);
                                                       startActivity(registerIntent);
-
-
                                                   }
-
-                                              }
-
-
-
-
-
-        );
+                                              });
 
 
 

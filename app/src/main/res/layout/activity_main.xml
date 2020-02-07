@@ -14,14 +14,16 @@
         android:layout_marginTop="50dp"
         app:srcCompat = "@drawable/logo"
         />
+
     <EditText
         android:id="@+id/edittext_username"
         android:layout_width="190dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
 
-        android:hint="@string/username"
-        android:background="#ffffff"/>
+        android:background="#ffffff"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
 
 
     <EditText
@@ -30,8 +32,9 @@
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
 
+        android:background="#ffffff"
         android:hint="@string/password"
-        android:background="#ffffff"/>
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/button"
